@@ -1,0 +1,33 @@
+$borderR: 20px;
+#playGround {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+  .field {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-size: 2em;
+    svg {
+      width: 90%;
+      height: 90%;
+      color: #f5f5f5;
+    }
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #ffffff41;
+    &:first-child {
+      border-radius: $borderR 0 0 0;
+    }
+    &:nth-child(3) {
+      border-radius: 0 $borderR 0 0;
+    }
+    &:nth-child(7) {
+      border-radius: 0 0 0 $borderR;
+    }
+    &:nth-child(9) {
+      border-radius: 0 0 $borderR 0;
+    }
+  }
+}

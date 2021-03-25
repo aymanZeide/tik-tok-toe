@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app {
+  background-color: #1abc9c;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app > div {
+  width: 600px;
+  height: 600px;
+}
+
+#playGround {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+
+#playGround .field {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #ffffff41;
+}
+
+#playGround .field svg {
+  width: 90%;
+  height: 90%;
+  color: #f5f5f5;
+}
+
+#playGround .field:first-child {
+  border-radius: 20px 0 0 0;
+}
+
+#playGround .field:nth-child(3) {
+  border-radius: 0 20px 0 0;
+}
+
+#playGround .field:nth-child(7) {
+  border-radius: 0 0 0 20px;
+}
+
+#playGround .field:nth-child(9) {
+  border-radius: 0 0 20px 0;
+}
+/*# sourceMappingURL=index.css.map */
